@@ -1,23 +1,32 @@
 import React from 'react'
-import Hero from './components/hero/Hero'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Services from './components/services/Services'
-import Banner from './components/banner/Banner'
-import Subscribe from './components/subscribe/Subscribe'
-import SecondBanner from './components/banner/SecondBanner'
-import Footer from './components/footer/Footer'
+import SignIn from './pages/auth/SignIn'
+import SignUp from './pages/auth/SignUp'
+import Courses from './pages/courses/Courses'
+import About from './pages/about/About'
+import Home from './pages/home/Home'
+
+
+const routes = (
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/services" element={<Services />} />
+    <Route path="/courses" element={<Courses />} />
+    <Route path="/about" element={<About />} />
+    <Route path="/sign-in" element={<SignIn />} />
+    <Route path="sign-up" element={<SignUp />} />
+  </Routes>
+)
 
 const App = () => {
   return (
-    <div className='overflow-x-hidden bg-white text-dark'>
-      <Hero />
-      <Services />
-      <Banner />
-      <Subscribe />
-      <SecondBanner />
-      <Footer/>
-    </div>
+    <Router>
+      {routes}
+    </Router>
   )
 }
 
 export default App
+
 

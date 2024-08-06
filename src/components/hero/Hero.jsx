@@ -28,7 +28,7 @@ export const FadeUp = (delay) => {
 
 const Hero = () => {
     return (
-        <div className='bg-light overflow-hidden relative'>
+        <div className='bg-light overflow-hidden relative '>
             <Navbar />
             <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[550px]">
                 <div className='flex flex-col justify-center py-14 md:py-0 relative z-20'>
@@ -72,3 +72,5 @@ const Hero = () => {
 }
 
 export default Hero
+
+
