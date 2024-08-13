@@ -18,7 +18,7 @@ const Navbar = () => {
                 className="container py-10 flex justify-between items-center"
             >
                 <div>
-                    <h1 className='font-bold text-2xl flex justify-center items-center gap-2 cursor-pointer' onClick={() => navigate('/home')}><span><img src={Icon} alt="icon" width={30} /></span> LearnVista</h1>
+                    <h1 className='font-bold text-2xl flex justify-center items-center gap-2 cursor-pointer' onClick={() => navigate('/')}><span><img src={Icon} alt="icon" width={30} /></span> LearnVista</h1>
                 </div>
                 <div className='hidden lg:block'>
                     <ul className='flex items-center gap-3'>

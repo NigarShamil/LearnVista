@@ -1,8 +1,15 @@
 import React from 'react'
+import SimpleNavbar from '../../components/navbar/SimpleNavbar'
+
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <div>
+      <SimpleNavbar />
+      <div className="container">
+        
+      </div>
+    </div>
   )
 }
 

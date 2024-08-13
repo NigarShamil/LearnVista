@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import PasswordInput from '../../components/input/PasswordInput'
+import Navbar from '../../components/navbar/Navbar'
 
 
 
@@ -12,7 +13,9 @@ const SignIn = () => {
     const navigate = useNavigate();
 
     return (
-            <div className='flex justify-center items-center min-h-[100vh] bg-light'>
+        <div>
+            <Navbar />
+            <div className='flex justify-center items-center min-h-[82.5vh] bg-light'>
                 <div className='w-96 border rounded bg-white px-10 py-12'>
                     <form >
                         <h4 className='text-2xl mb-7'>Sign In</h4>
@@ -39,6 +42,7 @@ const SignIn = () => {
                     </form>
                 </div>
             </div>
+        </div>
     )
 }
 

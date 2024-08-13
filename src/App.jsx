@@ -1,11 +1,13 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Services from './components/services/Services'
+
 import SignIn from './pages/auth/SignIn'
 import SignUp from './pages/auth/SignUp'
 import Courses from './pages/courses/Courses'
 import About from './pages/about/About'
 import Home from './pages/home/Home'
+import Services from './pages/services/Services'
+
 
 
 const routes = (
